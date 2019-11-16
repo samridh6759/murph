@@ -20,9 +20,9 @@ import smtplib,ssl
 import pickle
 import requests
 os.system('cls')
-print('                                                      MURPH                                                  ')
+print('                                  MURPH                                                  ')
 print('                                                                                                              ')
-print('                                                   A.I ASSISTANT                                                        ')
+print('                               A.I ASSISTANT                                                        ')
 state=1
 app_id='6WPAP6-L4WVRG22XG'
 client = wolframalpha.Client(app_id)
@@ -229,7 +229,7 @@ while state==1:
 			q=q+1
 			user_query=str(input('Please tell the data to search for\n'))
 			try:
-				sub=str(f'Subject :{user_query}\n')
+				sub=str('Subject :{}\n'.format(user_query))
 				mail_data=(sub+str(wikipedia.summary(user_query))).encode('utf-8')
 			except:
 				speak('I am unable to find anything please specify')
@@ -249,7 +249,7 @@ while state==1:
 			print('Email has been sent')
 	elif 'email' in arg and 'this' in arg:
 		p=list(work_list.keys())
-		sub=str(f'Subject :{p[-1]}\n')
+		sub=str('Subject :{}\n'.format(p[-1]))
 		mail_data=(sub+str(work_list[p[-1]])).encode('utf-8')
 		email(mail_data)
 	
