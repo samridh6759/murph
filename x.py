@@ -20,9 +20,9 @@ import smtplib,ssl
 import pickle
 import requests
 os.system('cls')
-print('                         MURPH                                                  ')
+print('                               MURPH                                                  ')
 print('                                                                                                              ')
-print('                      A.I ASSISTANT                                                        ')
+print('                            A.I ASSISTANT                                                        ')
 state=1
 app_id='6WPAP6-L4WVRG22XG'
 client = wolframalpha.Client(app_id)
