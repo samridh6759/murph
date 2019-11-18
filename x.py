@@ -19,7 +19,7 @@ from warnings import simplefilter
 import smtplib,ssl
 import pickle
 import requests
-os.system('cls')
+alias cls="tput reset"
 print('                               MURPH                                                  ')
 print('                                                                                                              ')
 print('                            A.I ASSISTANT                                                        ')
