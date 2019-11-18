@@ -28,10 +28,7 @@ app_id='6WPAP6-L4WVRG22XG'
 client = wolframalpha.Client(app_id)
 q=2
 def speak(x):
-	tex=gTTS(x,lang='en-in')
-	tex.save('run'+str(q)+'.mp3')
-	playsound.playsound('run'+str(q)+'.mp3', True)
-	os.remove('run'+str(q)+'.mp3')
+	pass
 def spell(x):
 	global q
 	for i in x :
